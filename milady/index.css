@@ -1,0 +1,169 @@
+body {
+  font: 1.2em;
+  font-family: "Ã£Æ’â€™Ã£Æ’Â©Ã£â€šÂ®Ã£Æ’Å½Ã¨Â§â€™Ã£â€šÂ´ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
+    "Ã£Æ’Â¡Ã£â€šÂ¤Ã£Æ’ÂªÃ£â€šÂª", Meiryo, "MS PÃ£â€šÂ´Ã£â€šÂ·Ã£Æ’Æ’Ã£â€šÂ¯", "MS PGothic", farial, helvetica,
+    clean, sans-serif;
+  max-width: 43em;
+  margin: auto;
+  background-image: linear-gradient(black, black, white, black, black);
+  background-attachment: fixed;
+}
+
+#banner {
+  position: static;
+  border-width: 0 1px 1px 1px;
+  border-color: white;
+  border-style: solid;
+  top: 0px;
+  left: 0px; 
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#banner_contents {
+  width: 80px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 20em;
+  border: 1px solid #777;
+}
+img:hover {
+  border: 1px solid purple;
+}
+.m_box {
+  border: 1px solid purple;
+  margin: 1em;
+  background-color: white;
+}
+.m_box_red {
+  border: 1px solid purple;
+  margin: 1em;
+  background-color: #ffffee;
+  text-align: center;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+.m_box_bar {
+  background: #d97ada;
+  color: white;
+}
+.m_box_bar_red {
+  background: #800000;
+  color: white;
+}
+
+h2.m_box {
+  background-color: #d97ada;
+}
+h2.box {
+  background-color: #fca;
+}
+p {
+  margin: 0.5em;
+  margin-left: 1em;
+  color: black;
+}
+
+.box {
+  border: 1px solid purple;
+  color: #d97ada;
+  margin: 1em;
+  background-color: white;
+}
+.box_bar {
+  background: #d97ada;
+  color: white;
+}
+
+h2 {
+  margin-top: 0.001em;
+  margin-bottom: 0.001em;
+  margin-left: 0.25em;
+  font-size: 1.1em;
+  text-align: center;
+}
+h3 {
+  margin-left: 0.3em;
+  font-size: 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.1em;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+}
+li {
+  margin-left: 0.3em;
+}
+ul {
+  list-style-type: circle;
+}
+a:hover {
+  color: #c180c1;
+  text-decoration: underline;
+}
+
+.column {
+  float: left;
+  width: 32%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery_container {
+  display: grid;
+  justify-items: auto;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding: 0.5em;
+  width: auto;
+}
+
+div.gallery_item {
+  object-fit: cover;
+}
+
+.gallery_item img {
+  border: 1px solid #777;
+  height: auto;
+  width: auto;
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 1em;
+  text-align: center;
+  font-size: smaller;
+  width: 80%;
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  div.desc {
+    font-size: x-small;
+  }
+
+  ul {
+    margin-right: 1em;
+  }
+}
