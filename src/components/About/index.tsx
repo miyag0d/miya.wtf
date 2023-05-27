@@ -12,7 +12,7 @@ const FlexContainer = styled.div`
 
 export default function About() {
   return (
-    <MBox alt>
+    <MBox alternative>
       <Bar>About Miya — ミヤについて</Bar>
       <p>
         Black Hearted Cyber Angel Baby Token is an experiment made by{' '}

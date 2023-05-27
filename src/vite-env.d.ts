@@ -18,3 +18,17 @@ interface Window {
   ethereum?: any
   toggleDevtools: undefined | (() => void)
 }
+
+type ResizedImage = {
+  class: string
+  srcset: string
+  loading: string
+  src: string
+  type: string
+}
+
+declare module '*&resize=true' {
+  // this is added for typescript to recognize the images that have been modified by vite-plugin-image-presets
+  const preset: ResizedImage[]
+  export default preset
+}

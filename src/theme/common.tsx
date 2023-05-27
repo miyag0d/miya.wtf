@@ -1,9 +1,9 @@
 import styled from 'styled-components/macro'
 
-const MBox = styled.div<{ alt?: boolean }>`
+const MBox = styled.div<{ alternative?: boolean }>`
   text-align: center;
   border: 1px solid purple;
-  background-color: ${({ theme, alt }) => (alt ? theme.bgGreen : theme.white)};
+  background-color: ${({ theme, alternative }) => (alternative ? theme.bgGreen : theme.white)};
   ${({ theme }) => theme.mediaWidth.upToSmall`
     margin:1rem;
   `}

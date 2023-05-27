@@ -2,7 +2,7 @@ import { MBox } from '@/theme/common'
 
 export default function License() {
   return (
-    <MBox alt style={{ marginTop: '1rem', marginBottom: '1rem' }}>
+    <MBox alternative style={{ marginTop: '1rem', marginBottom: '1rem' }}>
       <a href="https://viralpubliclicense.org/" target="_blank" rel="noopener noreferrer">
         VIRAL PUBLIC LICENSE
         <br />

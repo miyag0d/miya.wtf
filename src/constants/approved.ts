@@ -1,237 +1,284 @@
+import asciiThumbnail from 'assets/ascii.jpg?preset=thumbnail&resize=true'
+import auraThumbnail from 'assets/aura.jpg?preset=thumbnail&resize=true'
+import babiesThumbnail from 'assets/babies.jpg?preset=thumbnail&resize=true'
+import bannersThumbnail from 'assets/banners.jpg?preset=thumbnail&resize=true'
+import bitchThumbnail from 'assets/bitch.jpg?preset=thumbnail&resize=true'
+import bonklerThumbnail from 'assets/bonkler.jpg?preset=thumbnail&resize=true'
+import boredThumbnail from 'assets/bored.jpg?preset=thumbnail&resize=true'
+import cigawretteThumbnail from 'assets/cigawrette.jpg?preset=thumbnail&resize=true'
+import columbiaThumbnail from 'assets/columbia.jpg?preset=thumbnail&resize=true'
+import ghibladyThumbnail from 'assets/ghiblady.jpg?preset=thumbnail&resize=true'
+import godsThumbnail from 'assets/gods.jpg?preset=thumbnail&resize=true'
+import heiseiThumbnail from 'assets/heisei.jpg?preset=thumbnail&resize=true'
+import janklerThumbnail from 'assets/jankler.jpg?preset=thumbnail&resize=true'
+import malilyThumbnail from 'assets/malily.jpg?preset=thumbnail&resize=true'
+import matrixThumbnail from 'assets/matrix.jpg?preset=thumbnail&resize=true'
+import meowladyThumbnail from 'assets/meowlady.jpg?preset=thumbnail&resize=true'
+import meowlady2Thumbnail from 'assets/meowlady2.jpg?preset=thumbnail&resize=true'
+import mfersThumbnail from 'assets/mfers.jpg?preset=thumbnail&resize=true'
+import miauraThumbnail from 'assets/miaura.jpg?preset=thumbnail&resize=true'
+import mifairyThumbnail from 'assets/mifairy.jpg?preset=thumbnail&resize=true'
+import milThumbnail from 'assets/mil.jpg?preset=thumbnail&resize=true'
+import miladyThumbnail from 'assets/milady3.jpg?preset=thumbnail&resize=true'
+import milaidyThumbnail from 'assets/milaidy.jpg?preset=thumbnail&resize=true'
+import oekakiThumbnail from 'assets/oekaki.jpg?preset=thumbnail&resize=true'
+import petzThumbnail from 'assets/petz.jpg?preset=thumbnail&resize=true'
+import pixeladyThumbnail from 'assets/pixelady.jpg?preset=thumbnail&resize=true'
+import pixelbcThumbnail from 'assets/pixelbc.jpg?preset=thumbnail&resize=true'
+import pixelbroThumbnail from 'assets/pixelbro.jpg?preset=thumbnail&resize=true'
+import popsThumbnail from 'assets/pops.jpg?preset=thumbnail&resize=true'
+import r3dThumbnail from 'assets/r3d.jpg?preset=thumbnail&resize=true'
+import radbroThumbnail from 'assets/radbro.jpg?preset=thumbnail&resize=true'
+import raveThumbnail from 'assets/rave.jpg?preset=thumbnail&resize=true'
+import rememThumbnail from 'assets/remem.jpg?preset=thumbnail&resize=true'
+import remilioThumbnail from 'assets/remilio.jpg?preset=thumbnail&resize=true'
+import rockThumbnail from 'assets/rock.jpg?preset=thumbnail&resize=true'
+import sadbroThumbnail from 'assets/sadbro.jpg?preset=thumbnail&resize=true'
+import schizoThumbnail from 'assets/schizo.jpg?preset=thumbnail&resize=true'
+import shiroThumbnail from 'assets/shiro.jpg?preset=thumbnail&resize=true'
+import sonoraThumbnail from 'assets/sonora.jpg?preset=thumbnail&resize=true'
+import stationThumbnail from 'assets/station.jpg?preset=thumbnail&resize=true'
+import strawberryThumbnail from 'assets/strawberry.jpg?preset=thumbnail&resize=true'
+import streetThumbnail from 'assets/streets.gif'
+import vipThumbnail from 'assets/vip.jpg?preset=thumbnail&resize=true'
+import wotlikThumbnail from 'assets/wotlik.jpg?preset=thumbnail&resize=true'
+import yayoThumbnail from 'assets/yayo.jpg?preset=thumbnail&resize=true'
+import zladyThumbnail from 'assets/zlady.jpg?preset=thumbnail&resize=true'
+
 type Collection = {
-  image: string
+  image: ResizedImage[]
   name: string
   link: `https://${string}`
 }
 
 const approved: Collection[] = [
   {
-    image: 'images/milady3.jpg',
+    image: miladyThumbnail,
     name: 'Milady Maker',
     link: 'https://pro.opensea.io/collection/milady',
   },
   {
-    image: 'images/schizo.jpg',
+    image: schizoThumbnail,
     name: 'Schizoposters',
     link: 'https://pro.opensea.io/collection/schizoposters',
   },
   {
-    image: 'images/pixelady.jpg',
+    image: pixeladyThumbnail,
     name: 'Pixelady Maker',
     link: 'https://pro.opensea.io/collection/pixeladymaker',
   },
   {
-    image: 'images/remilio.jpg',
+    image: remilioThumbnail,
     name: 'Redacted Remilio Babies',
     link: 'https://pro.opensea.io/collection/remilio-babies',
   },
   {
-    image: 'images/bonkler.jpg',
+    image: bonklerThumbnail,
     name: 'Bonkler',
     link: 'https://pro.opensea.io/collection/bonkler',
   },
   {
-    image: 'images/bitch.jpg',
+    image: bitchThumbnail,
     name: 'Milady that B.I.T.C.H.',
     link: 'https://pro.opensea.io/collection/miladybitch',
   },
   {
-    image: 'images/banners.jpg',
+    image: bannersThumbnail,
     name: 'Banners',
     link: 'https://pro.opensea.io/collection/banners-nft',
   },
   {
-    image: 'images/radbro.jpg',
+    image: radbroThumbnail,
     name: 'Radbro Webring',
     link: 'https://pro.opensea.io/collection/radbro-webring',
   },
   {
-    image: 'images/yayo.jpg',
+    image: yayoThumbnail,
     name: 'YAYO NFT',
     link: 'https://pro.opensea.io/collection/yayo-nft',
   },
   {
-    image: 'images/aura.jpg',
+    image: auraThumbnail,
     name: 'milady aura',
     link: 'https://pro.opensea.io/collection/miladyaura',
   },
   {
-    image: 'images/gods.jpg',
+    image: godsThumbnail,
     name: 'Gods Remix',
     link: 'https://pro.opensea.io/collection/godsremix',
   },
   {
-    image: 'images/miaura.jpg',
+    image: miauraThumbnail,
     name: 'spring miaura',
     link: 'https://pro.opensea.io/collection/spring-miaura',
   },
   {
-    image: 'images/vip.jpg',
+    image: vipThumbnail,
     name: 'Very Internet Person',
     link: 'https://pro.opensea.io/collection/veryinternetperson',
   },
   {
-    image: 'images/petz.jpg',
+    image: petzThumbnail,
     name: 'milady aura petz',
     link: 'https://pro.opensea.io/collection/milady-aura-petz',
   },
   {
-    image: 'images/shiro.jpg',
+    image: shiroThumbnail,
     name: '*Oh... I see by shirosamaa',
     link: 'https://opensea.io/collection/shiro-oh-i-see',
   },
   {
-    image: 'images/rock.jpg',
+    image: rockThumbnail,
     name: 'Milady x EtherRock',
     link: 'https://pro.opensea.io/collection/milady-x-etherrock',
   },
   {
-    image: 'images/meowlady.jpg',
+    image: meowladyThumbnail,
     name: 'Meowlady Maker',
     link: 'https://pro.opensea.io/collection/meowlady-maker',
   },
   {
-    image: 'images/pixelbro.jpg',
+    image: pixelbroThumbnail,
     name: 'Pixelady Maker Radbro',
     link: 'https://pro.opensea.io/collection/pixeladymaker-radbro',
   },
   {
-    image: 'images/wotlik.jpg',
+    image: wotlikThumbnail,
     name: 'Pixelady Maker WOTLIK',
     link: 'https://pro.opensea.io/collection/pixeladymaker-wotlk',
   },
   {
-    image: 'images/pixelbc.jpg',
+    image: pixelbcThumbnail,
     name: 'Pixelady Maker BC',
     link: 'https://pro.opensea.io/collection/pixeladymaker-bc',
   },
   {
-    image: 'images/mifairy.jpg',
+    image: mifairyThumbnail,
     name: 'Mifairy Maker',
     link: 'https://pro.opensea.io/collection/mifairy-maker',
   },
   {
-    image: 'images/station.jpg',
+    image: stationThumbnail,
     name: 'MiladyStation',
     link: 'https://pro.opensea.io/collection/miladystation',
   },
   {
-    image: 'images/malily.jpg',
+    image: malilyThumbnail,
     name: 'water malilys',
     link: 'https://pro.opensea.io/collection/water-mililys',
   },
   {
-    image: 'images/cigawrette.jpg',
+    image: cigawretteThumbnail,
     name: 'Cigawrette Packs',
     link: 'https://pro.opensea.io/collection/cigawrettepacks',
   },
   {
-    image: 'images/oekaki.jpg',
+    image: oekakiThumbnail,
     name: 'Oekaki Maker',
     link: 'https://pro.opensea.io/collection/oekakimaker',
   },
   {
-    image: 'images/ghiblady.jpg',
+    image: ghibladyThumbnail,
     name: 'Ghiblady Maker',
     link: 'https://pro.opensea.io/collection/ghibladymaker',
   },
   {
-    image: 'images/sadbro.jpg',
+    image: sadbroThumbnail,
     name: 'Sadbros95',
     link: 'https://pro.opensea.io/collection/sadbros95',
   },
   {
-    image: 'images/streets.gif',
+    image: [{ class: '', srcset: streetThumbnail, src: streetThumbnail, type: 'image/png', loading: 'lazy' }],
     name: 'Streets of Milady',
     link: 'https://pro.opensea.io/collection/streetsofmilady',
   },
   {
-    image: 'images/heisei.jpg',
+    image: heiseiThumbnail,
     name: 'Heisei Milady Maker',
     link: 'https://pro.opensea.io/collection/heisei-milady-maker',
   },
   {
-    image: 'images/columbia.jpg',
+    image: columbiaThumbnail,
     name: 'Milady Colombia',
     link: 'https://pro.opensea.io/collection/miladycolombia',
   },
   {
-    image: 'images/rave.jpg',
+    image: raveThumbnail,
     name: 'MiladyRave',
     link: 'https://pro.opensea.io/collection/miladyrave',
   },
   {
-    image: 'images/sonora.jpg',
+    image: sonoraThumbnail,
     name: 'Sonora Maker',
     link: 'https://pro.opensea.io/collection/sonoramaker',
   },
   {
-    image: 'images/matrix.jpg',
+    image: matrixThumbnail,
     name: 'Matrix Milady',
     link: 'https://pro.opensea.io/collection/matrix-milady',
   },
   {
-    image: 'images/remem.jpg',
+    image: rememThumbnail,
     name: 'Remembrance Banners',
     link: 'https://pro.opensea.io/collection/remembrance-banners',
   },
   {
-    image: 'images/zlady.jpg',
+    image: zladyThumbnail,
     name: 'Zlady Maker',
     link: 'https://pro.opensea.io/collection/zladymaker',
   },
   {
-    image: 'images/r3d.jpg',
+    image: r3dThumbnail,
     name: 'R3DBRO',
     link: 'https://pro.opensea.io/collection/r3dbro',
   },
   {
-    image: 'images/mil.jpg',
+    image: milThumbnail,
     name: 'milAIdy maker',
     link: 'https://pro.opensea.io/collection/milaidymaker',
   },
   {
-    image: 'images/meowlady2.jpg',
+    image: meowlady2Thumbnail,
     name: 'Meowlady Maker 2',
     link: 'https://pro.opensea.io/collection/meowlady-maker-2',
   },
   {
-    image: 'images/ascii.jpg',
+    image: asciiThumbnail,
     name: 'Ascii Milady',
     link: 'https://pro.opensea.io/collection/ascii-milady',
   },
   {
-    image: 'images/milaidy.jpg',
+    image: milaidyThumbnail,
     name: 'milAIdys',
     link: 'https://pro.opensea.io/collection/milaidys',
   },
   {
-    image: 'images/pops.jpg',
+    image: popsThumbnail,
     name: 'Schizopops',
     link: 'https://pro.opensea.io/collection/schizopops',
   },
   {
-    image: 'images/jankler.jpg',
+    image: janklerThumbnail,
     name: 'Janklerz',
     link: 'https://pro.opensea.io/collection/janklerz',
   },
   {
-    image: 'images/strawberry.jpg',
+    image: strawberryThumbnail,
     name: 'Strawberry Juice',
     link: 'https://pro.opensea.io/collection/strawberryjuice',
   },
   {
-    image: 'images/bored.jpg',
+    image: boredThumbnail,
     name: 'Bored Milady Maker',
     link: 'https://pro.opensea.io/collection/boredmilady',
   },
   {
-    image: 'images/babies.jpg',
+    image: babiesThumbnail,
     name: 'Reptilian Babies',
     link: 'https://pro.opensea.io/collection/reptilianbabies',
   },
   {
-    image: 'images/mfers.jpg',
+    image: mfersThumbnail,
     name: 'milady mfers',
     link: 'https://pro.opensea.io/collection/milady-mfers',
   },

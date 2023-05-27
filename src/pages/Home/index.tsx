@@ -1,3 +1,7 @@
+import BannerImage from 'assets/banner.jpg?preset=banner&resize=true'
+import Love from 'assets/love.jpg?preset=avatar&resize=true'
+import Miya from 'assets/miya.png?preset=avatar&resize=true'
+import MiyaG from 'assets/miyagod.jpg?preset=avatar&resize=true'
 import styled from 'styled-components/macro'
 
 import About from '@/components/About'
@@ -90,7 +94,7 @@ export default function Home() {
                   <em>*You only need to hold 1 NFT from an approved collection in order to trade!*</em>
                 </p>
                 <ImageContainer>
-                  <img src="images/miya.png" />
+                  <img src={Miya[0]?.src} />
                   <Caption>
                     <i>&quot;Hello Frens! Welcome to the Daily Miya!!&quot;</i>
                   </Caption>
@@ -99,7 +103,7 @@ export default function Home() {
             </MBox>
             <ImageContainer>
               <BorderContainer style={{ width: '100%' }}>
-                <img src="images/miyagod.jpg" />
+                <img src={MiyaG[0]?.src} />
               </BorderContainer>
             </ImageContainer>
           </Explanation>
@@ -108,7 +112,7 @@ export default function Home() {
         </Container>
         <ApprovedCollections />
         <hr />
-        <Logo source="images/banner.jpg" />
+        <Logo source={BannerImage[0]?.src || ''} />
         <About />
         <ImageContainer style={{ marginBottom: '1.5rem' }}>
           <BorderContainer style={{ width: '100%' }}>
@@ -117,7 +121,7 @@ export default function Home() {
               target="_blank"
               href="https://opensea.io/assets/ethereum/0xbfe47d6d4090940d1c7a0066b63d23875e3e2ac5/4760"
             >
-              <img src="images/love.jpg" alt="SchizoPoster #4760" />
+              <img src={Love[0]?.src} alt="SchizoPoster #4760" />
             </a>
             <Caption color="#ffffff">
               <i>I HATE THE ANTICHRIST</i>

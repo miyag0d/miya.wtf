@@ -1,13 +1,45 @@
 import react from '@vitejs/plugin-react'
-import * as path from 'path'
+import path from 'path'
 import { defineConfig } from 'vite'
 import macrosPlugin from 'vite-plugin-babel-macros'
+import imagePresets, { widthPreset } from 'vite-plugin-image-presets'
 import svgr from 'vite-plugin-svgr'
 
 export default defineConfig({
   base: '',
-  plugins: [react(), svgr(), macrosPlugin()],
+  plugins: [
+    react(),
+    svgr(),
+    macrosPlugin(),
+    imagePresets({
+      thumbnail: widthPreset({
+        class: 'img thumb',
+        loading: 'lazy',
+        widths: [120, 170],
+        formats: {
+          webp: { quality: 50 },
+        },
+      }),
+      banner: widthPreset({
+        class: 'banner',
+        loading: 'lazy',
+        widths: [500],
+        formats: {
+          webp: { quality: 50 },
+        },
+      }),
+      avatar: widthPreset({
+        class: 'banner',
+        loading: 'lazy',
+        widths: [325],
+        formats: {
+          webp: { quality: 50 },
+        },
+      }),
+    }),
+  ],
   build: {
+    sourcemap: true,
     commonjsOptions: {
       include: [],
     },
@@ -15,11 +47,12 @@ export default defineConfig({
   resolve: {
     alias: [
       { find: '@', replacement: path.resolve(__dirname, 'src') },
-      { find: '@abis', replacement: path.resolve(__dirname, 'abis') },
+      { find: 'abis', replacement: path.resolve(__dirname, 'abis') },
       {
-        find: '@typechain',
-        replacement: path.resolve(__dirname, '../typechain-types'),
+        find: 'typechain',
+        replacement: path.resolve(__dirname, './typechain'),
       },
+      { find: 'assets', replacement: path.resolve(__dirname, 'src/assets') },
     ],
   },
   optimizeDeps: {

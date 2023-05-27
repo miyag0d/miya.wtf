@@ -34,9 +34,9 @@
     "incremental": true,
     "paths": {
       "abis/*": ["./abis/*"],
-      "typechain/*": ["./typechain/*", "../typechain-types/*"],
-      "@/*": ["./src/*"],
-      "public/*": ["./public/*"]
+      "typechain/*": ["./typechain/*"],
+      "assets/*": ["./src/assets/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src", "vite.config.ts", "wagmi.config.ts", "codegen.ts"],

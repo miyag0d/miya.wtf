@@ -1,3 +1,4 @@
+import Banner from 'assets/banner1.jpg?preset=banner&resize=true'
 import styled from 'styled-components/macro'
 
 import { Bar, BoxContent, MBox } from '@/theme/common'
@@ -18,7 +19,7 @@ export default function Header() {
   return (
     <>
       <HeaderContainer>
-        <Logo source="images/banner1.jpg" />
+        <Logo source={Banner[0]?.src || ''} />
         <MBox>
           <Bar>
             <h2>

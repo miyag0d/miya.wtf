@@ -1,3 +1,4 @@
+import MiladyGif from 'assets/milady.gif'
 import styled from 'styled-components/macro'
 
 import { Bar, MBox } from '@/theme/common'
@@ -30,7 +31,7 @@ export default function MiladyBox() {
           <h2>Milady Maker Collection</h2>
         </Bar>
         <ImageContainer>
-          <img src="images/milady.gif" />
+          <img src={MiladyGif} width={320} height={400} alt="Milady Maker" />
         </ImageContainer>
         <Content>
           <a href="https://pro.opensea.io/collection/milady" rel="noopener noreferrer" target="_blank">

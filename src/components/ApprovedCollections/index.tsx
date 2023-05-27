@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro'
 
 import { approved } from '@/constants/approved'
+import { MEDIA_WIDTHS } from '@/theme'
 import { Bar, MBox } from '@/theme/common'
 
 const Wrapper = styled.div`
@@ -62,7 +63,14 @@ export default function ApprovedCollections() {
         <GalleryContainer>
           {approved.map((item, index) => (
             <GalleryItem key={index} href={item.link} target="_blank" rel="noopener noreferrer">
-              <img src={item.image} alt={item.name} />
+              <img
+                src={item.image[0]?.src}
+                srcSet={item.image[0]?.srcset}
+                sizes={`(max-width: ${MEDIA_WIDTHS.upToSmall}px) 120px, 170px`}
+                alt={item.name}
+                width={170}
+                height={220}
+              />
               <Description>{item.name}</Description>
             </GalleryItem>
           ))}
