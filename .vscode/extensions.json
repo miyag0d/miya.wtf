@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "mikestead.dotenv",
+    "Orta.vscode-jest",
+    "sleistner.vscode-fileutils",
+    "eamodio.gitlens",
+    "wix.vscode-import-cost",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "styled-components.vscode-styled-components",
+    "jonkwheeler.styled-components-snippets"
+  ]
+}
