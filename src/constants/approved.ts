@@ -44,6 +44,8 @@ import vipThumbnail from 'assets/vip.jpg?preset=thumbnail&resize=true'
 import wotlikThumbnail from 'assets/wotlik.jpg?preset=thumbnail&resize=true'
 import yayoThumbnail from 'assets/yayo.jpg?preset=thumbnail&resize=true'
 import zladyThumbnail from 'assets/zlady.jpg?preset=thumbnail&resize=true'
+import angelThumbnail from 'assets/angel.jpg?preset=thumbnail&resize=true'
+import radcatThumbnail from 'assets/radcat.jpg?preset=thumbnail&resize=true'
 
 /* Test vite's import.meta.glob */
 /* 
@@ -182,6 +184,11 @@ const approved: Collection[] = [
     link: 'https://pro.opensea.io/collection/cigawrettepacks',
   },
   {
+    image: radcatThumbnail,
+    name: 'Radbro Webring: Radcats',
+    link: 'https://pro.opensea.io/collection/radbro-radcats',
+  },
+  {
     image: oekakiThumbnail,
     name: 'Oekaki Maker',
     link: 'https://pro.opensea.io/collection/oekakimaker',
@@ -265,6 +272,11 @@ const approved: Collection[] = [
     image: popsThumbnail,
     name: 'Schizopops',
     link: 'https://pro.opensea.io/collection/schizopops',
+  },
+  {
+    image: angelThumbnail,
+    name: 'Angel Banners',
+    link: 'https://pro.opensea.io/collection/angel-banners',
   },
   {
     image: janklerThumbnail,
