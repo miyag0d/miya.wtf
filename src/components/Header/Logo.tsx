@@ -17,7 +17,14 @@ export default function Logo({ source }: { source: string }) {
   return (
     <LogoWrapper>
       <Link to="/">
-        <img src={source} alt="miya.wtf" width={500} height={175} />
+        <img
+          src={source}
+          alt="miya.wtf"
+          width={500}
+          height={175}
+          style={{ minHeight: '175px', height: 'auto' }}
+          loading="eager"
+        />
       </Link>
     </LogoWrapper>
   )

@@ -4,14 +4,14 @@ import Miya from 'assets/miya.png?preset=avatar&resize=true'
 import MiyaG from 'assets/miyagod.jpg?preset=avatar&resize=true'
 import styled from 'styled-components/macro'
 
-import About from '@/components/About'
-import ApprovedCollections from '@/components/ApprovedCollections'
 import Banner from '@/components/Banner'
 import Header from '@/components/Header'
 import Logo from '@/components/Header/Logo'
-import Hero from '@/components/Hero'
+import About from '@/components/Home/About'
+import ApprovedCollections from '@/components/Home/ApprovedCollections'
+import Hero from '@/components/Home/Hero'
+import MiladyBox from '@/components/Home/MiladyBox'
 import License from '@/components/License'
-import MiladyBox from '@/components/MiladyBox'
 import { Bar, BorderContainer, MBox } from '@/theme/common'
 
 const AppContainer = styled.div`
@@ -94,7 +94,7 @@ export default function Home() {
                   <em>*You only need to hold 1 NFT from an approved collection in order to trade!*</em>
                 </p>
                 <ImageContainer>
-                  <img src={Miya[0]?.src} />
+                  <img src={Miya[0]?.src} alt="Miya" />
                   <Caption>
                     <i>&quot;Hello Frens! Welcome to the Daily Miya!!&quot;</i>
                   </Caption>
@@ -103,7 +103,7 @@ export default function Home() {
             </MBox>
             <ImageContainer>
               <BorderContainer style={{ width: '100%' }}>
-                <img src={MiyaG[0]?.src} />
+                <img src={MiyaG[0]?.src} alt="" />
               </BorderContainer>
             </ImageContainer>
           </Explanation>

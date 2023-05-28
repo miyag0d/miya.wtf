@@ -54,7 +54,7 @@ export default function About() {
       </p>
       <hr />
       <FlexContainer>
-        <a target="_blank" rel="noreferrer noopener">
+        <a href="/" target="_blank" rel="noreferrer noopener">
           Telegram
         </a>
         |

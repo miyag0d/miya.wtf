@@ -13,7 +13,6 @@ export default defineConfig({
     macrosPlugin(),
     imagePresets({
       thumbnail: widthPreset({
-        class: 'img thumb',
         loading: 'lazy',
         widths: [120, 170],
         formats: {
@@ -22,14 +21,13 @@ export default defineConfig({
       }),
       banner: widthPreset({
         class: 'banner',
-        loading: 'lazy',
+        loading: 'eager',
         widths: [500],
         formats: {
           webp: { quality: 50 },
         },
       }),
       avatar: widthPreset({
-        class: 'banner',
         loading: 'lazy',
         widths: [325],
         formats: {

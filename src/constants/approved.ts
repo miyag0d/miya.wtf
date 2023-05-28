@@ -45,6 +45,15 @@ import wotlikThumbnail from 'assets/wotlik.jpg?preset=thumbnail&resize=true'
 import yayoThumbnail from 'assets/yayo.jpg?preset=thumbnail&resize=true'
 import zladyThumbnail from 'assets/zlady.jpg?preset=thumbnail&resize=true'
 
+/* Test vite's import.meta.glob */
+/* 
+const thumbnails = import.meta.glob('assets/*.jpg', {
+  query: { preset: 'thumbnail', resize: true },
+  eager: true,
+})
+console.log(thumbnails)
+*/
+
 type Collection = {
   image: ResizedImage[]
   name: string
@@ -188,7 +197,7 @@ const approved: Collection[] = [
     link: 'https://pro.opensea.io/collection/sadbros95',
   },
   {
-    image: [{ class: '', srcset: streetThumbnail, src: streetThumbnail, type: 'image/png', loading: 'lazy' }],
+    image: [{ class: '', srcset: streetThumbnail, src: streetThumbnail, type: 'image/gif', loading: 'lazy' }],
     name: 'Streets of Milady',
     link: 'https://pro.opensea.io/collection/streetsofmilady',
   },

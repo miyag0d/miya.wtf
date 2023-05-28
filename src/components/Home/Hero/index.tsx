@@ -11,7 +11,7 @@ const HeroImage = styled.img`
 export default function Hero() {
   return (
     <BorderContainer>
-      <HeroImage src={Nun[0]?.src} width={500} height={300} />
+      <HeroImage src={Nun[0]?.src} width={500} height={300} alt="Nun" />
     </BorderContainer>
   )
 }
