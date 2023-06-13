@@ -46,7 +46,7 @@ import yayoThumbnail from 'assets/yayo.jpg?preset=thumbnail&resize=true'
 import zladyThumbnail from 'assets/zlady.jpg?preset=thumbnail&resize=true'
 import angelThumbnail from 'assets/angel.jpg?preset=thumbnail&resize=true'
 import radcatThumbnail from 'assets/radcat.jpg?preset=thumbnail&resize=true'
-import kawamiiThumbnail from 'assets/kawamii.jpg?preset=thumbnail&resize=true'
+import kawamiiThumbnail from 'assets/kawami.jpg?preset=thumbnail&resize=true'
 
 /* Test vite's import.meta.glob */
 /* 
